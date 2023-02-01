@@ -6,7 +6,24 @@ body{
     margin: 0;
     font-family: 'Sofia Sans', sans-serif;
 }
-
+.icon{
+    position: relative;
+    
+}
+.icon2{
+    display: none;
+    position: absolute;
+    top: 8px;
+    right: 0;
+    z-index: 40;
+    background-color: white;
+    padding: 8px;
+    list-style: none;
+    width: 200px;
+}
+.icon:hover .icon2{
+display: block;
+}
 img{
 height: 480px;
 width: 853px;
@@ -29,6 +46,7 @@ main{
  }
 svg{
     display: none;
+    color: black;
 }
 h1{
     display: flex;

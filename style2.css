@@ -12,6 +12,24 @@ main{
     max-width: 1000px;
      margin: 100px auto;
  }
+ .icon{
+    position: relative;
+    
+}
+.icon2{
+    display: none;
+    position: absolute;
+    top: 8px;
+    right: 0;
+    z-index: 40;
+    background-color: white;
+    padding: 8px;
+    list-style: none;
+    width: 200px;
+}
+.icon:hover .icon2{
+display: block;
+}
 header{
     color: black;
     margin: 0;
@@ -88,6 +106,7 @@ footer{
 }
 svg{
     display: none;
+    color: black;
 }
     @media screen and (max-width:1212px) {
         .flex{flex-direction: column-reverse;
