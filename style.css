@@ -1,18 +1,47 @@
 body{
-background-image: url(img.jpg);
+    background-image: url(bg2.jpg);
 background-size: 100%;
 font-family: 'Sofia Sans', sans-serif;
+margin: 0px;
+color: rgb(211, 211, 211);
 }
 article{
-    padding: 15px 30px;
+ 
     
 }
-header{
+h3{
     margin: 0;
-    padding: 4px;
-    text-align: center;
 }
-.head{
+main{
+    
+   max-width: 1000px;
+    margin: 100px auto;
+}
+header{
+    color: rgb(255, 255, 255);
+    margin: 0;
+    padding:4px 0 ;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: aliceblue;
+    z-index: 30;
+}
+.container{
+display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.logo>a{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+/*.head{
     color: azure;
 }
 
@@ -21,7 +50,10 @@ header{
     margin-right: 5px;
     
     padding: 3px;
-    
+}
+  */  
+svg{
+    display: none;
 }
 .card-content-img>img{
     width: 100%;
@@ -30,7 +62,7 @@ header{
 }
 
 a{
-    color:WHITE;
+    color:rgb(6, 6, 6);
     text-decoration: none;
     margin: 7px;
 }
@@ -48,6 +80,7 @@ p{
         text-align: center;
         background-color: rgb(71, 71, 71);
         padding: 40px;
+        
     }   
         .r{
             background-color:rgb(71, 71, 71) ;
@@ -92,4 +125,12 @@ p{
         width: 100%;
     }
 
-}    
+}   
+@media screen and (max-width:670px) {
+    .headlist>span {
+        display: none;
+    }
+    svg{
+        display: block;
+    }
+} 

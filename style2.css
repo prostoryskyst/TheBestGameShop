@@ -1,13 +1,41 @@
 body{
-background-image: url(bgd.jpg) ;
+    background-image: url(bg2.jpg);
 background-repeat: no-repeat;
 background-size: cover;
 color: white;
 font-size: 18px;
-padding: 12px;
 font-family: 'Sofia Sans', sans-serif;
+margin: 0;
 }
-
+main{
+    
+    max-width: 1000px;
+     margin: 100px auto;
+ }
+header{
+    color: black;
+    margin: 0;
+    padding:4px 0 ;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: aliceblue;
+    z-index: 30;
+}
+.container{
+display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.logo>a{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
 .th{
     display: inline-block;
     
@@ -15,8 +43,9 @@ font-family: 'Sofia Sans', sans-serif;
     text-align:right;
     
 }
-img{
+.sport>img{
     object-fit: cover;
+    width: 400px;
 }
 .sport{
     display: inline;
@@ -36,24 +65,45 @@ header{
     padding: 3px;    
 }
 a{
-    color: rgb(176, 174, 174);
+    color:rgb(6, 6, 6);
+    text-decoration: none;
+    margin: 7px;
+}
+a:hover{
+    color:rgb(208, 206, 206) ;
 }
 footer{
     text-align: center;
     background-color: rgb(71, 71, 71);
-    padding: 40px;
+    padding: 20px;
+    
 } 
 .flex{
     display: flex;
     align-items: center;
-    gap: 19px;
+    
 }
 .flex,.sport{
     flex: 50%;
 }
-
+svg{
+    display: none;
+}
     @media screen and (max-width:1212px) {
-        .flex{flex-direction: column;}
+        .flex{flex-direction: column-reverse;
+        }
         img{width: 100%;
         height: 300px;}
+        .imglogo{ 
+            height:50px;
+            width: 50px;
+        }
     }
+    @media screen and (max-width:670px) {
+        .headlist>span {
+            display: none;
+        }
+        svg{
+            display: block;
+        }
+    } 

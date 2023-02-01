@@ -2,43 +2,100 @@ body{
     background-image: url(bg2.jpg);
     background-size: 100%;
     color: rgb(211, 211, 211);
-    padding: 12px;
+    
+    margin: 0;
     font-family: 'Sofia Sans', sans-serif;
 }
-img{
- 
+main{
+    
+    max-width: 1000px;
+     margin: 100px auto;
+ }
+svg{
+    display: none;
+}
+a:hover{
+    color:rgb(208, 206, 206) ;
 }
 .img1{
 
 height: 510px;
 object-fit: cover;
 }
+.logo>a{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
 header{
     margin: 0;
     padding: 4px;
     text-align: center;
 }
-.head{
-    color: azure;
-}
+
 
 .headlist{
     display:inline;
     margin-right: 5px;
     
     padding: 3px;
-    
+}
+h1{
+    display: flex;
+    margin-top: 100px;
 }
 a{
-    color: rgb(255, 255, 255);
+    color: rgb(6, 6, 6);
+    text-decoration: none;
+    margin: 7px;
 }
 footer{
     text-align: center;
     background-color: rgb(71, 71, 71);
-    padding: 40px;
-} 
+    padding: 20px;
+
+}
+header{
+    color: black;
+    margin: 0;
+    padding:4px 0 ;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: aliceblue;
+    z-index: 30;
+}
+.container{
+display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.head1{
+    color: rgb(112, 110, 110);
+}
 @media screen and (max-width:910px) {
   .img1{width: 100%;
     height: 300px;
 }  
 }
+@media screen and (max-width:1212px) {
+    .flex{flex-direction: column-reverse;
+    }
+    .imglogo{ 
+        height:50px;
+        width: 50px;
+    }
+}
+@media screen and (max-width:670px) {
+    .headlist>span {
+        display: none;
+    }
+    svg{
+        display: block;
+    }
+} 
